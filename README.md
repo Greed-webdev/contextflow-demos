@@ -25,3 +25,25 @@
 Демки собираются генератором из кода приложения:
 `node qa/build-demo.js <файл> <№ партии> <сцена1> <сцена2> <сцена3>`.
 Править демки руками не нужно — правь сцены в приложении и пересобирай.
+
+---
+
+## Закрытие баглиста D6 — актуально на HEAD main (коммит выше)
+
+Если твой снапшот старше этого блока — возьми свежий клон; всё проверено на HEAD.
+
+| пункт | фраза | ветка на HEAD |
+|---|---|---|
+| D6-001 | I do not need five. | many (не five) |
+| D6-002 | I don't need anything more. | all |
+| D6-003 | I will not wait for your call. | refuse |
+| D6-004 | Not Thursday, Friday works. | oth (не thu) |
+| D6-005 | Not Wednesday, Thursday. | direct, день = thursday |
+| D6-006 | No card, cash please. | cash (обе сцены оплаты) |
+| D6-007 | No, when will I know? | ask |
+| D6-008 | I am not sure, medium. | m |
+| D6-009 | didn't/wasn't/… в EXP | есть (ядро демо = ядро приложения) |
+| D6-010 | Not black. Red one. | red |
+
+Системно: ядро всех демок (5–13) собирается из актуальных хелперов приложения
+(app.js + lessons.js); застарелое ядро из шаблона больше не используется.
